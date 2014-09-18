@@ -7,6 +7,7 @@
 ## Usage
 * npm install
 * node app.js
+* try teacher list service, open the URL with a brower: http://localhost:3000/teachers
 
 
 ## Developing
