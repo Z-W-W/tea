@@ -8,5 +8,5 @@ var file = __dirname + '/teacher_list.json';
 var context = fs.readFileSync(file, 'utf8');
 
 exports.list = function(req, res){
-  res.send(context);
+    res.jsonp(context);
 };
