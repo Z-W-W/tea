@@ -8,7 +8,7 @@ var express = require('express'),
     http = require('http'),
     path = require('path'),
     mongoskin = require('mongoskin'),
-    dbUrl = process.env.MONGOHQ_URL || 'mongodb://@localhost:27017/chess',
+    dbUrl = process.env.MONGOLAB_URI || 'mongodb://@localhost:27017/chess',
     db = mongoskin.db(dbUrl, {safe: true}),
     collections = {
         Teachers: db.collection('Teachers'),
