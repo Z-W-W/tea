@@ -1,0 +1,39 @@
+[
+    {
+    "TeacherID": "1001",
+    "ClassID": "2001",
+    "Availability": [
+        {
+            "StartTime": "2014-10-23T09:00:00",
+            "EndTime": "2014-10-23T10:00:00",
+            "Capacity": "4",
+            "Occupancy": "1"
+        },
+        {
+            "StartTime": "2014-10-23T10:00:00",
+            "EndTime": "2014-10-23T11:00:00",
+            "Capacity": "4",
+            "Occupancy": "0"
+        }
+    ]
+    },
+
+    {
+"TeacherID": "1002",
+"ClassID": "2001",
+"Availability": [
+{
+"StartTime": "2014-10-23T14:00:00",
+"EndTime": "2014-10-23T15:00:00",
+"Capacity": "1",
+"Occupancy": "1"
+},
+{
+"StartTime": "2014-10-23T16:00:00",
+"EndTime": "2014-10-23T17:00:00",
+"Capacity": "1",
+"Occupancy": "0"
+}
+]
+}
+]

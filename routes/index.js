@@ -1,3 +1,4 @@
+exports.teacher = require('./teacher');
 
 /*
  * GET home page.
