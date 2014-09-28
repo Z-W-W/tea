@@ -1,14 +1,14 @@
 [
     {
-        "TeacherID": "1001",
         "Name": "赵甲",
-        "Description": "赵甲",
-        "Picture": "http://pictureURL"
+        "Description": "赵甲的简介",
+        "Picture": "http://pictureURL",
+        "Email": "zhaojia@chess.coom"
     },
     {
-        "TeacherID": "1002",
         "Name": "钱乙",
-        "Description": "钱乙",
-        "Picture": "http://pictureURL"
+        "Description": "钱乙的简介",
+        "Picture": "http://pictureURL",
+        "Email": "qianyi@chess.coom"
     }
 ]

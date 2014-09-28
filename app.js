@@ -7,13 +7,10 @@ var express = require('express'),
     routes = require('./routes'),
     http = require('http'),
     path = require('path'),
-    mongoskin = require('mongoskin'),
-    dbUrl = process.env.MONGOLAB_URI || 'mongodb://@localhost:27017/chess',
-    db = mongoskin.db(dbUrl, {safe: true}),
-    collections = {
-        Teachers: db.collection('Teachers'),
-        TeacherSchedules: db.collection('TeacherSchedules')
-    };
+    mongoose = require('mongoose'),
+    models = require('./models'),
+    dbUrl = process.env.MONGOHQ_URL || 'mongodb://@localhost:27017/chess',
+    db = mongoose.connect(dbUrl, {safe: true});
 
 var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -30,13 +27,14 @@ var allowCrossDomain = function(req, res, next) {
 };
 
 var app = express();
-app.locals.appTitle = 'Chess';
+app.locals.appTitle = "blog-express";
 
 app.use(function(req, res, next) {
-    if (!collections.Teachers || ! collections.TeacherSchedules) return next(new Error("No collections."));
-    req.collections = collections;
+    if (! models.teacher) return next(new Error("No models."));
+    req.models = models;
     return next();
 });
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
