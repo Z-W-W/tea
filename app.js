@@ -56,10 +56,12 @@ if ('development' == app.get('env')) {
 // Pages and routes
 app.get('/', routes.index);
 app.get('/teachers', routes.teacher.list);
+app.get('/teacherschedule', routes.teacherschedule.list);
 
 // REST API routes
-app.get('/rest/teachers', routes.teacher.list);
-//app.get('/rest/teacherschedules', routes.teacherschedule)
+app.get('/api/teachers', routes.teacher.list);
+app.post('/api/teacher', routes.teacher.add);
+app.get('/api/teacherschedule', routes.teacherschedule.list);
 
 
 app.all('*', function(req, res) {

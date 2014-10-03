@@ -1,4 +1,5 @@
 exports.teacher = require('./teacher');
+exports.teacherschedule = require('./teacherschedule');
 
 /*
  * GET home page.

@@ -14,7 +14,8 @@ var teacherSchema = new mongoose.Schema({
             function(email) {
                 return (email.match(/[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i) != null)},
             'Invalid email'
-        ]
+        ],
+        unique: true
     }
 });
 
@@ -22,15 +23,6 @@ teacherSchema.static({
     list: function(callback){
         this.find(
             {},
-            /*function(err, docs) {
-                if (!err) {
-                    console.log(docs);
-                    process.exit();
-                }
-                else {
-                    throw err;
-                }
-            }*/
             null,
             {sort: {_id:-1}},
             callback
@@ -38,4 +30,4 @@ teacherSchema.static({
     }
 });
 
-module.exports = mongoose.model('Teacher', teacherSchema);
+module.exports = mongoose.model('teacher', teacherSchema);
