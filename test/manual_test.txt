@@ -1,3 +1,5 @@
 // Create a teacher
+curl -i -X POST -H 'Content-Type: application/json' -d '{"teacher": {"Name": "赵甲", "Description": "赵甲的简介", "Picture": "http://pictureURL", "Email": "zhaojia2@chess.coom"}}' http://localhost:3000/api/teacher
 
-curl -i -X POST -H 'Content-Type: application/json' -d '{"teacher": {"Name": "赵甲", "Description": "赵甲的简介", "Picture": "http://pictureURL", "Email": "zhaojia1@chess.coom"}}' http://localhost:3000/api/teacher
+// Update a teacher
+curl -i -X PUT -H 'Content-Type: application/json' -d '{"teacher": {"Name": "赵甲", "Description": "赵甲的简介 changed again!", "Picture": "http://pictureURL", "Email": "zhaojia2@chess.coom"}}' http://localhost:3000/api/teacher

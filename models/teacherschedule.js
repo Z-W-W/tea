@@ -13,6 +13,14 @@ var teacherScheduleSchema = new mongoose.Schema({
     Availability : [availabilitySchema]
 });
 
+teacherScheduleSchema.statics.findByTeacherIDCourseID = function(teacherID, courseID, callback){
+    this.find(
+        {TeacherID: teacherID.trim(), ClassID: courseID.trim()},
+        null,
+        callback
+    )
+};
+
 teacherScheduleSchema.static({
     list: function(callback){
         this.find(

@@ -10,7 +10,7 @@ exports.list = function(req, res){
 };
 
 /*
- * POST teacher API.
+ * POST teacher API to create a new teacher profile
  */
 
 exports.add = function(req, res, next) {
@@ -20,4 +20,20 @@ exports.add = function(req, res, next) {
         if (error) return next(error);
         res.send(teacherResponse);
     });
+};
+
+/*
+ * PUT teach API to update an existing teacher profile
+ */
+
+exports.update = function(req, res, next) {
+    if (!req.body.teacher) return next(new Error('No teacher payload.'));
+    var teacher = req.body.teacher;
+    req.models.teacher.findOneAndUpdate(
+        {Email: teacher.Email},
+        {Description: teacher.Description},
+        function (error, teacherResponse){
+            res.send(teacherResponse);
+        }
+    );
 };

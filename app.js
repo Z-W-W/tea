@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -27,10 +26,10 @@ var allowCrossDomain = function(req, res, next) {
 };
 
 var app = express();
-app.locals.appTitle = "blog-express";
+app.locals.appTitle = "Chess";
 
 app.use(function(req, res, next) {
-    if (! models.teacher) return next(new Error("No models."));
+    if (!models.teacher) return next(new Error("No models."));
     req.models = models;
     return next();
 });
@@ -61,7 +60,15 @@ app.get('/teacherschedule', routes.teacherschedule.list);
 // REST API routes
 app.get('/api/teachers', routes.teacher.list);
 app.post('/api/teacher', routes.teacher.add);
+app.put('/api/teacher', routes.teacher.update);
+
+app.get('/api/courses', routes.course.list);
+app.post('/api/course', routes.course.add);
+
 app.get('/api/teacherschedule', routes.teacherschedule.list);
+app.get('/api/teacherschedule/teacherid=:teacherID&courseid=:courseID', routes.teacherschedule.byTeacherIDCourseID);
+//app.post('/api/teacherschedule', routes.teacherschedule.add);
+
 
 
 app.all('*', function(req, res) {
