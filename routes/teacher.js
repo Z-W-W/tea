@@ -1,3 +1,8 @@
+
+exports.show = function(req, res){
+    res.render('index');
+};
+
 /*
  * GET teacher listing.
  */
@@ -23,7 +28,7 @@ exports.add = function(req, res, next) {
 };
 
 /*
- * PUT teach API to update an existing teacher profile
+ * PUT teacher API to update an existing teacher profile
  */
 
 exports.update = function(req, res, next) {
@@ -37,3 +42,11 @@ exports.update = function(req, res, next) {
         }
     );
 };
+
+/*
+ * DELETE teacher API to update an existing teacher profile
+ */
+
+exports.delete = function(req, res, next) {
+
+}

@@ -4,7 +4,7 @@ function customersController($scope,$http) {
     var AvailableTimeSlots = [10, 11, 13, 14, 15, 16, 17, 18];
     //end of test data session
 
-    $http.get("http://localhost:3000/teachers")
+    $http.get("http://localhost:3000/api/teachers")
         .success(function(data, status, headers, config) {
             $scope.teachers = data;
         })
@@ -84,7 +84,7 @@ function customersController($scope,$http) {
     };
 
     $scope.showScheduleTable =function(teacher){
-        $http.get("http://localhost:3000/teacherschedule")
+        $http.get("http://localhost:3000/api/teacherschedule")
             .success(function (data, status, headers, config) {
                 var teacherIndex = 0;
 
@@ -122,7 +122,4 @@ function customersController($scope,$http) {
                 alert("error " + status);
             });
     }
-
 }
-
-

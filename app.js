@@ -37,15 +37,15 @@ app.use(function(req, res, next) {
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/public');
 app.set('view engine', 'jade');
 app.use(allowCrossDomain);
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(app.router);
 
 // development only
 if ('development' == app.get('env')) {
@@ -54,7 +54,7 @@ if ('development' == app.get('env')) {
 
 // Pages and routes
 app.get('/', routes.index);
-app.get('/teachers', routes.teacher.list);
+app.get('/teachers', routes.teacher.show);
 app.get('/teacherschedule', routes.teacherschedule.list);
 
 // REST API routes
