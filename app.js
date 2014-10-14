@@ -38,7 +38,7 @@ app.use(function(req, res, next) {
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/public');
-app.set('view engine', 'jade');
+app.engine('html', require('ejs').renderFile);
 app.use(allowCrossDomain);
 app.use(express.favicon());
 app.use(express.logger('dev'));

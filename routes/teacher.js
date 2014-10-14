@@ -1,6 +1,5 @@
-
 exports.show = function(req, res){
-    res.render('index');
+    res.render('teacher_level.html');
 };
 
 /*
