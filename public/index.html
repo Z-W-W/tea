@@ -1,319 +1,460 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="utf-8">
-    <title>Twitter Bootstrap 3 Fixed Layout Example</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <meta name="format-detection" content="telephone=no" />
 
-    <!-- Latest compiled and minified bootstrap CSS and JavaScript-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script>
-        $(document).ready(function(){
-            $("#myNavbar").load("nagbar.html");
-            $("#footer").load("footer.html");
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <meta http-equiv="Cache-Control" content="no-cache" />
+
+    <meta http-equiv="Expires" content="0" />
+
+    <link rel="stylesheet" href="/Content/active.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/BootStrap/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/BootStrap/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/BootStrap/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/BootStrap/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/js/WeixinApi.js"></script>
+
+    <script type="text/javascript" src="/js/activev1.js"></script>
+
+    <title>迎新年，集分享，免费领取4752元乐高教育课程卡！把世界最好的教育带给孩子！</title>
+
+    <script type="text/javascript">
+
+        document.addEventListener('touchstart', function () { }, true);
+
+        var u = '986';
+
+        var a = '1178';
+
+        var v = '77903e1c7503410bacfeb27d6a3f6f83';
+
+        var p = '78ec5abd7fcc469780492f276e8ec7e1';
+
+        var l = '14';
+
+        var i = 'http://jfx.njsdw.cn/Content/Upload/ShareIcon/986/d9f8070343d8441db755d905aae7ca7a.png';
+
+        var b = 'http://ift.tangfadian.com//activev1/show/he6dmljrge5ti';
+
+        var t = '迎新年，集分享，免费领取4752元乐高教育课程卡！把世界最好的教育带给孩子！';
+
+        $(document).ready(function () {
+
+            var act = new active(u, a, v, p, l, i, b, t);
+
+            act.loadInfo();
+
         });
     </script>
 
-    <style type="text/css">
-        .list-group{
-            width: 200px;
-        }
-        .bs-example{
-            margin: 20px;
-        }
-
-        #myCarousel h2{
-            margin: 0;
-            color: #666;
-            padding-top: 90px;
-            font-size: 52px;
-            font-family: "trebuchet ms", sans-serif;
-        }
-        .item{
-            background: #333;
-            text-align: center;
-            height: 300px !important;
-        }
-        .carousel{
-            margin-top: 20px;
-        }
-    </style>
 </head>
+
 <body>
 
-<!-Navigation Bar->
-<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-</nav>
+<div class="act_over">活动已结束</div>
 
-<div class="container">
-    <div class="jumbotron">
-        <h1>Hello Anthony!</h1>
-        <p>
-            Keep mind active <br>
-            Learn chess strategy<br>
-            Improve chess skills<br>
-            Most important <strong> HAVE FUN! </strong>
-        </p>
-        <p class="btn btn-success btn-lg">Get started today</p>
-    </div>
-    <!-Grid(row/column) example->
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>HTML</h2>
-            <p>HTML is a markup language that is used for creating web pages. The HTML tutorial section will help you understand the basics of HTML, so that you can create your own web pages or website.</p>
-            <p><a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+
+
+<div class="container" style="background:#FFFFFF">
+
+    <h3>迎新年，集分享，免费领取4752元乐高教育课程卡！把世界最好的教育带给孩子！</h3>
+
+    <img src="http://jfx.njsdw.cn/Content/Upload/ActivityPic/986/1846ee1202414dbfb99d21aa723dbc16.jpg" alt="活动图片" class="img-responsive" />
+
+    <div class="publicity">
+
+        <div class="publicity_line publicity_businessicon">
+
+            <div class="publicity_line_business">南京乐高活动中心</div>
+
+            <div class="publicity_line_authtime">认证时间:  2014/12/19</div>
+
+            <a class="report" href="/ActiveV1/Report">举报</a>;
+
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>CSS</h2>
-            <p>CSS is used for describing the presentation of web pages. The CSS tutorial section will help you learn the essentials of CSS, so that you can fine control the style and layout of your HTML document.</p>
-            <p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+
+        <div class="publicity_line publicity_infoicon" id="divIconContainer" data-expand="false">
+
+            <div class="publicity_line_title">活动规则公示</div>
+
+            <div class="publicity_down"></div>
+
         </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>Bootstrap</h2>
-            <p>Twitter Bootstrap is a powerful front-end framework for faster and easier web development. The Twitter Bootstrap tutorial section will help you learn the techniques of Bootstrap so that you can create web your own website with much less efforts.</p>
-            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+
+        <div id="divPublicityInfo" style="display: none;"></div>
+
+        <div class="publicity_line publicity_howicon" id="divHowContainer" data-expand="false">
+
+            <div class="publicity_line_title">如何参与活动</div>
+
+            <div class="publicity_down"></div>
+
         </div>
-        <div class="clearfix visible-md-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>References</h2>
-            <p>The references section outlines all the standard HTML tags and CSS properties along with other useful references such as color names and values, symbols and character entities, web safe fonts, language codes, HTTP messages and much more.</p>
-            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>Examples</h2>
-            <p>The examples section encloses an extensive collection of examples on various topic that you can try and test yourself using online HTML editor.</p>
-            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>FAQ</h2>
-            <p>The collection of Frequently Asked Questions (FAQ) provides brief answers to many common questions related to web design and development.</p>
-            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
+
+        <div id="divPublicityHow" style="display: none;"></div>
+
     </div>
 
-<!-Table example->
-    <table class="table table-condensed table-bordered table-hover">
-        <thead>
-        <tr class="warning">
-            <th>Ordered Date</th>
-            <th>Class</th>
-            <th>Time</th>
-            <th>FirstClass</th>
-            <th>Teacher</th>
-            <th>Status</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>10/06/2014</td>
-            <td>Knight</td>
-            <td>Tuesday 6pm</td>
-            <td>10/07/2014</td>
-            <td>Ms. Susan</td>
-            <td><a href="#">Inactive</a></td>
-        </tr>
-        <tr>
-            <td>10/03/2014</td>
-            <td>Knight</td>
-            <td>Tuesday 1pm</td>
-            <td>10/05/2014</td>
-            <td>Ms. Joe</td>
-            <td><a href="#" class="success">Active</a></td>
-        </tr>
-        </tbody>
-    </table>
+    <div class="act">
 
-<!-List example->
-    <div class="list-group">
-    <a href="#" class="list-group-item active">
-        <span class="glyphicon glyphicon-camera"></span> Pictures <span class="badge">25</span>
-    </a>
-    <a href="#" class="list-group-item">
-        <span class="glyphicon glyphicon-file"></span> Documents <span class="badge">145</span>
-    </a>
-    <a href="#" class="list-group-item">
-        <span class="glyphicon glyphicon-music"></span> Music <span class="badge">50</span>
-    </a>
-    <a href="#" class="list-group-item">
-        <span class="glyphicon glyphicon-film"></span> Videos <span class="badge">8</span>
-    </a>
+        <fieldset style="font-family: 微软雅黑; word-wrap: break-word ! important; border: 0px none; box-sizing: border-box ! important; font-size: 14px; margin: 0.5em 0px; padding: 0px;"><section style="box-sizing: border-box; word-wrap: break-word ! important; height: 1em; border: 0px none; margin: 0px; max-width: 100%; padding: 0px;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0px 0px 0.4em; border-top-style: solid; border-left-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;" class="main1"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0.4em 0px 0px; border-top-style: solid; border-right-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;" class="main2"></section></section><section style="border: 1px solid #0070C0; border-radius: 0.3em; box-sizing: border-box; margin: -0.8em 0.1em -0.8em 0.2em; max-width: 100%; padding: 0.8em; word-wrap: break-word ! important;"><p><strong><span style="color: rgb(0, 0, 0); font-size: 16px;"><img src="http://jfx.njsdw.cn/Content/Upload/ActivityContentPic/986/a6841349c559448da8075a51605db93c.jpg" title="a6841349c559448da8075a51605db93c.jpg" alt="a6841349c559448da8075a51605db93c.jpg" width="100%"/></span></strong></p><p><span style="background-color: rgb(255, 255, 0);"><strong><span style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); font-size: 16px;">【参与规则】</span></strong></span></p><p style="white-space: normal; line-height: 24px; orphans: 2; widows: 2;"><strong><span style="color: rgb(0, 0, 0);">1、将当前页面分享到微信朋友圈</span></strong></p><p style="white-space: normal; line-height: 24px; orphans: 2; widows: 2;"><strong><span style="color: rgb(0, 0, 0);">2、页面被自己微信朋友圈的好友分享一次（计数+１，系统自动计入）</span></strong></p><p style="white-space: normal; line-height: 24px; orphans: 2; widows: 2;"><strong><span style="color: rgb(0, 0, 0);">3、达分享数，点击兑奖码，根据下页兑奖方式换礼品</span></strong></p></section><section style="max-width: 100%; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; height: 1em; word-wrap: break-word !important;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0px 0.4em 0.4em; border-bottom-style: solid; border-left-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0.4em 0.4em 0px; border-right-style: solid; border-bottom-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section></fieldset><p><br/></p><fieldset style="color: rgb(0, 0, 0); font-family: 微软雅黑; border: 0px none; margin: 0.5em 0px; padding: 0px; word-wrap: break-word !important; box-sizing: border-box !important;"><section style="box-sizing: border-box; height: 1em; border: 0px none; margin: 0px; max-width: 100%; padding: 0px; word-wrap: break-word !important;"><section class="main1" style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0px 0px 0.4em; border-top-style: solid; border-left-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section class="main2" style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0.4em 0px 0px; border-top-style: solid; border-right-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section><section style="border: 1px solid rgb(0, 112, 192); border-top-left-radius: 0.3em; border-top-right-radius: 0.3em; border-bottom-right-radius: 0.3em; border-bottom-left-radius: 0.3em; box-sizing: border-box; margin: -0.8em 0.1em -0.8em 0.2em; max-width: 100%; padding: 0.8em; word-wrap: break-word !important;"><p><span style="background-color: rgb(255, 255, 0);"><strong style="color: rgb(102, 102, 102); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; white-space: normal;"><span style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); font-size: 16px;">【活动时间】</span></strong></span></p><p style="text-align: center;"><strong><span style="font-size: 18px; color: rgb(255, 0, 0);">2014.12.26--2015.1.26</span></strong></p></section><section style="max-width: 100%; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; height: 1em; word-wrap: break-word !important;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0px 0.4em 0.4em; border-bottom-style: solid; border-left-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0.4em 0.4em 0px; border-right-style: solid; border-bottom-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section></fieldset><p><br/></p><fieldset style="font-family: 微软雅黑; border: 0px none; margin: 0.5em 0px; padding: 0px; word-wrap: break-word !important; box-sizing: border-box !important;"><section style="box-sizing: border-box; height: 1em; border: 0px none; margin: 0px; max-width: 100%; padding: 0px; word-wrap: break-word !important;"><section class="main1" style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0px 0px 0.4em; border-top-style: solid; border-left-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section class="main2" style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0.4em 0px 0px; border-top-style: solid; border-right-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section><section style="border: 1px solid rgb(0, 112, 192); border-top-left-radius: 0.3em; border-top-right-radius: 0.3em; border-bottom-right-radius: 0.3em; border-bottom-left-radius: 0.3em; box-sizing: border-box; margin: -0.8em 0.1em -0.8em 0.2em; max-width: 100%; padding: 0.8em; word-wrap: break-word !important;"><p><span style="background-color: rgb(255, 255, 0);"><strong style="color: rgb(102, 102, 102); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; white-space: normal;"><span style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); font-size: 16px;">【奖项设置】</span></strong></span></p><p><strong><span style="color: rgb(0, 0, 0);">集<span style="color: rgb(255, 0, 0);">3个</span>分享，得<span style="color: rgb(255, 0, 0);">乐高教育体验课一节</span>（共500份）</span></strong></p><p><strong><span style="color: rgb(0, 0, 0);">集<span style="color: rgb(255, 0, 0);">15个</span>分享，得<span style="color: rgb(255, 0, 0);">价值880元乐高教育月卡一张</span>（共160份）</span></strong></p><p><strong><span style="color: rgb(0, 0, 0);">集<span style="color: rgb(255, 0, 0);">40个</span>分享，得<span style="color: rgb(255, 0, 0);">价值2640元乐高教育季度卡一张</span>（共20份)</span></strong></p><p><strong><span style="color: rgb(0, 0, 0);">集<span style="color: rgb(255, 0, 0);">80个</span>分享，得<span style="color: rgb(255, 0, 0);">价值4752元乐高教育半年卡一张</span>（共2份)</span></strong></p></section><section style="max-width: 100%; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; height: 1em; word-wrap: break-word !important;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0px 0.4em 0.4em; border-bottom-style: solid; border-left-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0.4em 0.4em 0px; border-right-style: solid; border-bottom-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section></fieldset><p><br/></p><fieldset style="font-family: 微软雅黑; word-wrap: break-word ! important; border: 0px none; box-sizing: border-box ! important; font-size: 14px; margin: 0.5em 0px; padding: 0px;"><section style="box-sizing: border-box; word-wrap: break-word ! important; height: 1em; border: 0px none; margin: 0px; max-width: 100%; padding: 0px;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0px 0px 0.4em; border-top-style: solid; border-left-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;" class="main1"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0.4em 0px 0px; border-top-style: solid; border-right-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;" class="main2"></section></section><section style="border: 1px solid #0070C0; border-radius: 0.3em; box-sizing: border-box; margin: -0.8em 0.1em -0.8em 0.2em; max-width: 100%; padding: 0.8em; word-wrap: break-word ! important;"><p><strong style="color: rgb(102, 102, 102); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; white-space: normal;"><span style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); font-size: 16px;">【兑奖方式】</span></strong></p><p><strong><span style="color: rgb(0, 0, 0);">凭兑奖码就近到南京市四家乐高教育官方授权中心登记兑奖。（<span style="color: rgb(255, 0, 0);">请各位兑奖前3天打电话和我们预约一下！</span>）</span></strong></p><p><span style="color: rgb(0, 0, 0);">兑奖时间：<span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);"><strong>2014.12.26--2015.1.31</strong></span></span></p><p style="white-space: normal;"><strong><span style="color: rgb(31, 73, 125);"></span></strong></p><p style="white-space: normal;"><span style="color: rgb(192, 80, 77);"><strong>南京凤凰书城乐高活动中心</strong></span></p><p style="white-space: normal;"><span style="color: rgb(192, 80, 77);"><strong><span style="color: rgb(31, 73, 125);"></span></strong></span></p><p style="white-space: normal;"><span style="color: rgb(192, 80, 77);"><strong>电话：<a href="tel:025-83657116">025-83657116</a>/<a href="tel:83657117">83657117</a></strong></span></p><p style="white-space: normal;"><span style="color: rgb(192, 80, 77);"><strong>地址：南京市湖南路1号凤凰书城五楼</strong></span></p><p style="white-space: normal;"><strong><span style="color: rgb(31, 73, 125);">南京建邺奥体乐高活动中心</span></strong><strong><span style="color: rgb(31, 73, 125);"><br/></span></strong></p><p style="white-space: normal;"><strong><span style="color: rgb(31, 73, 125);">电话：<a href="tel:025-86690189">025-86690189</a></span></strong></p><p style="white-space: normal;"><strong><span style="color: rgb(31, 73, 125);">地址：南京市建邺区奥体中心网球中心一楼1012</span></strong></p><p style="white-space: normal;"><strong><span style="color: rgb(151, 72, 6);">南京龙江乐高活动中心</span></strong></p><p style="white-space: normal;"><strong><span style="color: rgb(151, 72, 6);">电话：<a href="tel:025-66033958">025-66033958</a></span></strong></p><p style="white-space: normal;"><strong><span style="color: rgb(151, 72, 6);">地址：南京市鼓楼区汉江路148号</span></strong></p><p style="white-space: normal;"><strong><span style="color: rgb(255, 0, 0);">南京大光路乐高活动中心</span></strong></p><p style="white-space: normal;"><strong><span style="color: rgb(255, 0, 0);">电话：<a href="tel:025-52725999">025-52725999</a></span></strong></p><p style="white-space: normal;"><strong><span style="color: rgb(255, 0, 0);">地址：南京市秦淮区大光路118号金陵尚府8幢702</span></strong></p></section><section style="max-width: 100%; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; height: 1em; word-wrap: break-word !important;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0px 0.4em 0.4em; border-bottom-style: solid; border-left-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0.4em 0.4em 0px; border-right-style: solid; border-bottom-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section></fieldset><p><br/></p><fieldset style="font-family: 微软雅黑; border: 0px none; margin: 0.5em 0px; padding: 0px; word-wrap: break-word !important; box-sizing: border-box !important;"><section style="box-sizing: border-box; height: 1em; border: 0px none; margin: 0px; max-width: 100%; padding: 0px; word-wrap: break-word !important;"><section class="main1" style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0px 0px 0.4em; border-top-style: solid; border-left-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section class="main2" style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0.4em 0px 0px; border-top-style: solid; border-right-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section><section style="border: 1px solid rgb(0, 112, 192); border-top-left-radius: 0.3em; border-top-right-radius: 0.3em; border-bottom-right-radius: 0.3em; border-bottom-left-radius: 0.3em; box-sizing: border-box; margin: -0.8em 0.1em -0.8em 0.2em; max-width: 100%; padding: 0.8em; word-wrap: break-word !important;"><p><span style="background-color: rgb(255, 255, 0);"><strong style="color: rgb(102, 102, 102); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; white-space: normal;"><span style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); font-size: 16px;">【关于乐高】</span></strong></span></p><p><span style="color: rgb(0, 0, 0);">来自于童话王国丹麦的乐高教育，有着经80年优化发展并通过欧洲严格环保测试的LEGO技术教育器材，有着34年历史的创新教学研究。乐高公司产品被列入改变世界的 100 项发明之一，在120多个国家里占有市场。它所倡导的“做中学”的教学理念，得到了世界各国学校或教育机构的认可。乐高教育课程体系，从学前、小学、中学至大学科研机构，通过提供独特的教学工具来营造一个主动学习的气氛，培养学生的创新思维、解决问题以及团队合作的能力，已成为培养21世纪创新型人才的主要方式。</span></p><p><span style="color: rgb(0, 0, 0);"><img src="http://jfx.njsdw.cn/Content/Upload/ActivityContentPic/986/86f3035ba6554ad3a67a35dfe2507a56.jpg" title="86f3035ba6554ad3a67a35dfe2507a56.jpg" alt="86f3035ba6554ad3a67a35dfe2507a56.jpg" width="100%"/></span></p><p><span style="color: rgb(0, 0, 0);">乐高教育课程均是与世界顶尖科研机构共同研发而成，在多个世界性教育奖项中获得大奖和特别荣誉，为众多国家的课堂教育所广泛使用。在中国已经有2000多所中小学，60多所大学，400多个校外活动场所在使用乐高产品。</span></p><p><img src="http://jfx.njsdw.cn/Content/Upload/ActivityContentPic/986/2896a96a78ee4272bc2f45d712dca346.jpg" title="2896a96a78ee4272bc2f45d712dca346.jpg" alt="2896a96a78ee4272bc2f45d712dca346.jpg" width="100%"/></p><p><strong><span style="color: rgb(0, 0, 0);">乐高活动中心——一个孩子向往的地方</span></strong></p><p><span style="color: rgb(0, 0, 0);">乐高活动中心隶属丹麦乐高集团教育部，其独特、专业、充满乐趣和创造力的活动，为3-16岁的孩子打开了发现和探索世界的大门！</span></p><p><img src="http://jfx.njsdw.cn/Content/Upload/ActivityContentPic/986/41d867e228114b698fb107ddd11848b7.jpg" title="41d867e228114b698fb107ddd11848b7.jpg" alt="41d867e228114b698fb107ddd11848b7.jpg" width="100%"/></p><p><span style="color: rgb(0, 0, 0);">在英、美、法、加拿大、澳大利亚、亚洲等全球先进的国家和地区的幼儿园、学校都运用乐高进行教育！目前乐高教育授权在中国北京、上海、深圳、南京、苏州、天津、沈阳、杭州……等地开设了100多家乐高活动中心！把世界最好的教育带给孩子！</span></p><p><strong><span style="color: rgb(255, 0, 0); font-size: 16px;">乐高活动中心是一个孩子们向往的地方！</span></strong></p></section><section style="max-width: 100%; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; height: 1em; word-wrap: break-word !important;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0px 0.4em 0.4em; border-bottom-style: solid; border-left-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0.4em 0.4em 0px; border-right-style: solid; border-bottom-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section></fieldset><p><br/></p><fieldset style="font-family: 微软雅黑; border: 0px none; margin: 0.5em 0px; padding: 0px; word-wrap: break-word !important; box-sizing: border-box !important;"><section style="box-sizing: border-box; height: 1em; border: 0px none; margin: 0px; max-width: 100%; padding: 0px; word-wrap: break-word !important;"><section class="main1" style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0px 0px 0.4em; border-top-style: solid; border-left-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section class="main2" style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0.4em 0px 0px; border-top-style: solid; border-right-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section><section style="border: 1px solid rgb(0, 112, 192); border-top-left-radius: 0.3em; border-top-right-radius: 0.3em; border-bottom-right-radius: 0.3em; border-bottom-left-radius: 0.3em; box-sizing: border-box; margin: -0.8em 0.1em -0.8em 0.2em; max-width: 100%; padding: 0.8em; word-wrap: break-word !important;"><p><span style="background-color: rgb(255, 255, 0);"><strong style="color: rgb(102, 102, 102); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; white-space: normal;"><span style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); font-size: 16px;">【乐高教学方法】</span></strong></span></p><p><span style="color: rgb(0, 0, 0);">乐高教育解决方案以支持四个步骤的学习过程为目的而设计，即：联系(Connect)、建构(Construct)、反思(Contemplate)和延续(Continue)。</span></p><p><img src="http://jfx.njsdw.cn/Content/Upload/ActivityContentPic/986/206857294d304ab7bae7d48549ac35ad.jpg" title="206857294d304ab7bae7d48549ac35ad.jpg" alt="206857294d304ab7bae7d48549ac35ad.jpg" width="100%"/></p><p><strong><span style="color: rgb(255, 0, 0);">联系-Connect</span></strong><span style="color: rgb(0, 0, 0);">：“做中学”的关健之一是，如果孩子能够把新的体验与现有的“知识库”联系起来，或者当他们接触到一种极具吸引力的想法，激发他们了解更多知识的愿望，那么他们就能取得最好的学习效果。</span></p><p><strong><span style="color: rgb(255, 0, 0);">建构-Construct</span></strong><span style="color: rgb(0, 0, 0);">：指在真实世界中构建事物时，在头脑中组合知识。让孩子们策划、编写程序，为完成所分配的任务而设计解决方案。</span></p><p><strong><span style="color: rgb(255, 0, 0);">反思-Contemplate</span></strong><span style="color: rgb(0, 0, 0);">：让孩子对他们看到或建构的内容进行思考，对方案进行讨、反思并调整他们的看法，同时，辅导老师也通过提问题来鼓励他们继续下去。这是一个达到成效的重要阶段。</span></p><p><strong><span style="color: rgb(255, 0, 0);">延续-Continue</span></strong><span style="color: rgb(0, 0, 0);">：建立在想了解更多内容的欲望的基础上。这样，就又把孩子们引入一个新的“联系”阶段，使他们在一个螺旋式上升的良性循环过程中超越难度不断增加的挑战。</span></p></section><section style="max-width: 100%; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; height: 1em; word-wrap: break-word !important;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0px 0.4em 0.4em; border-bottom-style: solid; border-left-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0.4em 0.4em 0px; border-right-style: solid; border-bottom-style: solid; border-color: rgb(0, 112, 192); height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section></fieldset><p><br/></p><fieldset style="font-family: 微软雅黑; word-wrap: break-word ! important; border: 0px none; box-sizing: border-box ! important; font-size: 14px; margin: 0.5em 0px; padding: 0px;"><section style="box-sizing: border-box; word-wrap: break-word ! important; height: 1em; border: 0px none; margin: 0px; max-width: 100%; padding: 0px;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0px 0px 0.4em; border-top-style: solid; border-left-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;" class="main1"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0.4em 0.4em 0px 0px; border-top-style: solid; border-right-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;" class="main2"></section></section><section style="border: 1px solid #0070C0; border-radius: 0.3em; box-sizing: border-box; margin: -0.8em 0.1em -0.8em 0.2em; max-width: 100%; padding: 0.8em; word-wrap: break-word ! important;"><p><span style="background-color: rgb(255, 255, 0);"><strong style="color: rgb(102, 102, 102); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; white-space: normal;"><span style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); font-size: 16px;">【联系我们】</span></strong></span></p><p><strong><span style="font-size: 16px; color: rgb(0, 0, 0);">南京四家乐高教育官方授权中心地址及联系方式：</span></strong></p><p><strong><span style="font-size: 14px; color: rgb(31, 73, 125);"></span></strong></p><p style="white-space: normal;"><span style="color: rgb(192, 80, 77);"><strong>南京凤凰书城乐高活动中心</strong></span></p><p style="white-space: normal;"><span style="color: rgb(192, 80, 77);"><strong><span style="color: rgb(31, 73, 125);"></span></strong></span></p><p style="white-space: normal;"><span style="color: rgb(192, 80, 77);"><strong>电话：<a href="tel:025-83657116">025-83657116</a>/<a href="tel:83657117">83657117</a></strong></span></p><p style="white-space: normal;"><span style="color: rgb(192, 80, 77);"><strong>地址：南京市湖南路1号凤凰书城五楼</strong></span></p><p><strong><span style="color: rgb(31, 73, 125);">南京建邺奥体乐高活动中心</span></strong><strong><span style="font-size: 14px; color: rgb(31, 73, 125);"><br/></span></strong></p><p><strong><span style="font-size: 14px; color: rgb(31, 73, 125);">电话：<a href="tel:025-86690189">025-86690189</a></span></strong></p><p><strong><span style="font-size: 14px; color: rgb(31, 73, 125);">地址：南京市建邺区奥体中心网球中心一楼1012</span></strong></p><p><strong><span style="color: rgb(151, 72, 6);">南京龙江乐高活动中心</span></strong></p><p><strong><span style="color: rgb(151, 72, 6);">电话：<a href="tel:025-66033958">025-66033958</a></span></strong></p><p><strong><span style="color: rgb(151, 72, 6);">地址：南京市鼓楼区<strong style="color: rgb(102, 102, 102); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; white-space: normal;"><span style="color: rgb(151, 72, 6);">汉江路148号</span></strong></span></strong></p><p><strong><span style="color: rgb(255, 0, 0);">南京大光路乐高活动中心</span></strong></p><p><strong><span style="color: rgb(255, 0, 0);">电话：<a href="tel:025-52725999">025-52725999</a></span></strong></p><p><strong><span style="color: rgb(255, 0, 0);">地址：南京市秦淮区大光路<strong style="color: rgb(102, 102, 102); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; white-space: normal;"><span style="color: rgb(255, 0, 0);">118号</span></strong>金陵尚府8幢702</span></strong></p></section><section style="max-width: 100%; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; height: 1em; word-wrap: break-word !important;"><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0px 0.4em 0.4em; border-bottom-style: solid; border-left-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: left; word-wrap: break-word !important; box-sizing: border-box !important;"></section><section style="max-width: 100%; margin: 0px; padding: 0px; border-width: 0px 0.4em 0.4em 0px; border-right-style: solid; border-bottom-style: solid; border-color: #0070C0; height: 16px; width: 1.5em; float: right; word-wrap: break-word !important; box-sizing: border-box !important;"></section></section></fieldset><p><br/></p>
+
+    </div>
+
+    <div class="visitor" id="divVisitor">
+
+        <div class="loading">
+
+            <span class="loading_icon"></span>
+
+            <span class="loading_tip">集分享统计中...</span>
+
+        </div>
+
+    </div>
+
+    <p class="footer"><a class="logo" href="/ActiveV1/intro?AgentId=22"> </a></p>
+
 </div>
 
-<!-Log in form->
-    <form>
-        <div class="form-group">
-            <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-        </div>
-        <div class="form-group">
-            <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox"> Remember me</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
 
-    <form>
-        <div class="row">
-            <div class="col-xs-6">
-                <input type="text" class="form-control input-lg" placeholder="Larger input">
-            </div>
-            <div class="col-xs-6">
-                <select class="form-control input-lg">
-                    <option>Larger select</option>
-                </select>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-xs-6">
-                <input type="text" class="form-control" placeholder="Default input">
-            </div>
-            <div class="col-xs-6">
-                <select class="form-control">
-                    <option>Default select</option>
-                </select>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-xs-6">
-                <input type="text" class="form-control input-sm" placeholder="Smaller input">
-            </div>
-            <div class="col-xs-6">
-                <select class="form-control input-sm">
-                    <option>Smaller select</option>
-                </select>
-            </div>
-        </div>
-    </form>
 
-<!- Search input and button ->
-    <form>
-        <div class="row">
-            <div class="col-xs-6">
-                <div class="input-group">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Class</a></li>
-                            <li><a href="#">Teacher</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Others</a></li>
-                        </ul>
-                    </div>
-                    <input type="text" class="form-control">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default">Go</button>
-                    </span>
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <div class="input-group">
-                    <input type="text" class="form-control">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
+<!--弹出层，兑奖 -->
 
-    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-            <div class="active item">
-                <img src="images/1.jpg">
+<div class="modal fade" id="divExchange" tabindex="-1" role="dialog" aria-labelledby="exchangeLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header exchange-header">
+
+                <button type="button" class="close" data-dismiss="modal">
+
+                    <span aria-hidden="true">&times;</span>
+
+                    <span class="sr-only">Close</span>
+
+                </button>
+
+                <span class="exchange-header-icon"></span>
+
+                <h4 class="modal-title" id="exchangeLabel">立即兑奖</h4>
+
             </div>
-            <div class="item">
-                <img src="images/2.jpg">
+
+            <div class="modal-body exchange-body">
+
+                <h2>
+
+                    <label id="lblPrize"></label>
+
+                </h2>
+
+                <p>兑奖后不可撤销！</p>
+
             </div>
-            <div class="item">
-                <img src="images/3.jpg">
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default exchange-cancel" data-dismiss="modal">取消</button>
+
+                <button type="button" id="btnExchangeSubmit" class="btn exchange-submit" data-loading-text="正在进行兑奖...">确定</button>
+
             </div>
+
         </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
-<!-Date Time picker->
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
+
     </div>
 
-    <!-TabNav->
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#sectionA">Section A</a></li>
-        <li><a data-toggle="tab" href="#sectionB">Section B</a></li>
-        <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                <li><a data-toggle="tab" href="#dropdown1">Dropdown1</a></li>
-                <li><a data-toggle="tab" href="#dropdown2">Dropdown2</a></li>
-            </ul>
-        </li>
-    </ul>
-    <div class="tab-content">
-        <div id="sectionA" class="tab-pane fade in active">
-            <h3>Section A</h3>
-            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-        </div>
-        <div id="sectionB" class="tab-pane fade">
-            <h3>Section B</h3>
-            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
-        </div>
-        <div id="dropdown1" class="tab-pane fade">
-            <h3>Dropdown 1</h3>
-            <p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam dolor at lorem. Sed bibendum nibh sit amet dictum feugiat. Vivamus arcu sem, cursus a feugiat ut, iaculis at erat. Donec vehicula at ligula vitae venenatis. Sed nunc nulla, vehicula non porttitor in, pharetra et dolor. Fusce nec velit velit. Pellentesque consectetur eros.</p>
-        </div>
-        <div id="dropdown2" class="tab-pane fade">
-            <h3>Dropdown 2</h3>
-            <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis dis parturient.</p>
-        </div>
-    </div>
 </div>
 
-    <hr>
 
 
-    <div id="footer">
+<!--弹出层，获奖提醒-->
+
+<div class="modal fade" id="divRemind" tabindex="-1" role="dialog" aria-labelledby="remindLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header exchange-header">
+
+                <button type="button" class="close" data-dismiss="modal">
+
+                    <span aria-hidden="true">&times;</span>
+
+                    <span class="sr-only">Close</span>
+
+                </button>
+
+                <span class="exchange-header-icon"></span>
+
+                <h4 class="modal-title" id="remindLabel">获奖提醒</h4>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p>请输入手机号码，一旦获奖，系统将第一时间短信提醒您！</p>
+
+                <div id="divPhoneInput" style="display: none;">
+
+                    <input type="tel" class="form-control" placeholder="请输入手机号码..." id="txtRemindPhone" />
+
+                </div>
+
+                <div id="divPhoneShow" style="display: none;" class="remind-show">
+
+                    <input type="tel" disabled="disabled" class="form-control" id="txtPhone" /><span id="spanDelPhone" class="remind-del"></span>
+
+                </div>
+
+                <div id="divPhoneValidate" style="color: red; margin-top: 5px;"></div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default exchange-cancel" data-dismiss="modal">取消</button>
+
+                <button type="button" id="btnRemindSubmit" class="btn exchange-submit" data-loading-text="正在提交号码...">提交</button>
+
+            </div>
+
+        </div>
+
     </div>
+
+</div>
+
+
+
+<!--弹出层，贡献度不足-->
+
+<div class="modal fade" id="divContribution" tabindex="-1" role="dialog" aria-labelledby="contributionLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header contribution-header">
+
+                <span class="contribution-header-icon"></span>
+
+                <h4 class="modal-title" id="contributionLabel">提示</h4>
+
+            </div>
+
+            <div class="modal-body">
+
+                您的分享贡献值（5次）已用完，此次分享无效！
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn contribution-cancel" data-dismiss="modal">关闭</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--弹出层，恶意分享-->
+
+<div class="modal fade" id="divMalicious" tabindex="-1" role="dialog" aria-labelledby="maliciousLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header malicious-header">
+
+                <span class="malicious-header-icon"></span>
+
+                <h4 class="modal-title" id="maliciousLabel0">提示</h4>
+
+            </div>
+
+            <div class="modal-body">
+
+                您涉嫌恶意集分享，分享无效！
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default malicious-cancel" data-dismiss="modal">关闭</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--弹出层，异常兑奖-->
+
+<div class="modal fade" id="divAbnormal" tabindex="-1" role="dialog" aria-labelledby="maliciousLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header malicious-header">
+
+                <span class="malicious-header-icon"></span>
+
+                <h4 class="modal-title" id="maliciousLabel">兑奖无效</h4>
+
+            </div>
+
+            <div class="modal-body">
+
+                您涉嫌采用非正常方式集分享数量，本次兑奖资格被取消，如需申诉请致电我公司法务部门，直线电话：0512-69373652
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default malicious-cancel" data-dismiss="modal">关闭</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--首次提醒-->
+
+<div class="modal fade" id="divFirstMark" tabindex="-1" role="dialog" aria-labelledby="maliciousLabel" aria-hidden="true">
+
+    <div class="modal-dialog" style="border-radius: 0!important;">
+
+        <div class="modal-content" style="border-radius: 0!important;margin-top: 20%;">
+
+            <div style="color: #32770E; border-bottom: solid 1px #d9d8dc; padding: 10px; margin: 0 10px;">
+
+                <h4 style="font-weight: bold;">提示</h4>
+
+            </div>
+
+            <div class="modal-body" style="font-size: 16px;">
+
+                参与"集分享"活动期间,请不要切换微信账号,及更换其它设备登录,否则无法兑奖!
+
+            </div>
+
+            <div class="modal-footer" style="padding: 0;">
+
+                <button type="button" style="width: 100%;height: 30px;line-height: 30px;font-size: 16px;background: #fff!important; border: 0!important; border-radius: 0!important;" data-dismiss="modal">我知道了!</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--弹出层，重复分享-->
+
+<div class="modal fade" id="divIsRepeatShare" tabindex="-1" role="dialog" aria-labelledby="maliciousLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header malicious-header">
+
+                <span class="malicious-header-icon"></span>
+
+                <h4 class="modal-title" id="isRepeatLabel">分享无效</h4>
+
+            </div>
+
+            <div class="modal-body">
+
+                您已帮该用户有效分享一次，此次为重复分享，分享无效！
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default malicious-cancel" data-dismiss="modal">关闭</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--微信版本提醒-->
+
+<div class="modal fade" id="divWeixinVersion" tabindex="-1" role="dialog" aria-labelledby="maliciousLabel" aria-hidden="true">
+
+    <div class="modal-dialog" style="border-radius: 0!important;">
+
+        <div class="modal-content" style="border-radius: 0!important;margin-top: 20%;">
+
+            <div style="color: #32770E; border-bottom: solid 1px #d9d8dc; padding: 10px; margin: 0 10px;">
+
+                <h4 style="font-weight: bold;">提示</h4>
+
+            </div>
+
+            <div class="modal-body" style="font-size: 16px;">
+
+                对不起！您的微信版本暂不支持集分享活动，分享无法计数，谢谢理解！
+
+            </div>
+
+            <div class="modal-footer" style="padding: 0;">
+
+                <button type="button" style="width: 100%;height: 30px;line-height: 30px;font-size: 16px;background: #fff!important; border: 0!important; border-radius: 0!important;" data-dismiss="modal">我知道了!</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
 
 </body>
+
 </html>
