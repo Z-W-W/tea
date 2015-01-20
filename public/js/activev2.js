@@ -13,7 +13,7 @@ var active = function (u, a, v, p, l, i, b, t) {
         this.title = t;
         var self = this;
         self.Publicity();
-        if (navigator.userAgent.indexOf('MicroMessenger/6.1') == -1) {
+        //if (navigator.userAgent.indexOf('MicroMessenger/6.1') == -1) {
             alert("load");
             WeixinApi.ready(function (api) {
                 api.showOptionMenu();
@@ -59,7 +59,7 @@ var active = function (u, a, v, p, l, i, b, t) {
                 api.shareToWeibo(wxData, wxCallbacks);
                 api.generalShare(wxData, wxCallbacks);
             });
-        }
+        //}
     } catch (e) {
     }
 };
