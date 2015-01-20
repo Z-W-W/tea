@@ -72,6 +72,7 @@ active.prototype.bangtaji = function () {
             url: '/activev2/StartShare',
             type: 'post',
             success: function (data) {
+                alert("sucess shared");
                 if (data === 'False_Contribution') {
                     $('#divContribution').modal('show');
                 } else if (data === 'False_ShareLimit') {
@@ -87,8 +88,13 @@ active.prototype.bangtaji = function () {
                 $(self).unbind('click').attr('class', 'share_timeline_disabled btn-block');
                 $button.button('reset');
                 $(self).html('您已帮TA集');
-            }, error: function () {
+            },
+            error: function () {
+                alert("error after sharing");
                 $button.button('reset');
+            },
+            complete: function() {
+                alert("complete sharing")
             }
         });
     });
