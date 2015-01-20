@@ -71,6 +71,7 @@ active.prototype.bangtaji = function () {
         }
         var $button = $(this).button('loading');
         var self = this;
+        alert("v2 triggered.");
         $.ajax({
             url: '/activev2/StartShare',
             type: 'post',
