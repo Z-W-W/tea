@@ -4,6 +4,7 @@
 //活动主函数
 var active = function (u, a, v, p, l, i, b, t) {
     try {
+        alert("initial");
         this.visitor = v;
         this.parent = p;
         this.level = l;
@@ -13,6 +14,7 @@ var active = function (u, a, v, p, l, i, b, t) {
         var self = this;
         self.Publicity();
         if (navigator.userAgent.indexOf('MicroMessenger/6.1') == -1) {
+            alert("load");
             WeixinApi.ready(function (api) {
                 api.showOptionMenu();
                 var wxData = {
